@@ -1,1 +1,1 @@
-Vongrey Experience — full static site (clear writing). Replace hero image and logo as desired. Deploy on GitHub Pages.
+Vongrey Experience — Deploy-ready static site. Replace hero image and confirm Google Form embeds. Deploy on GitHub Pages.
