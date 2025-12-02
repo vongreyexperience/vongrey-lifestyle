@@ -1,53 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Vongrey Experience</title><link rel="stylesheet" href="style.css"></head>
-<body class="theme-dark">
-  <header class="container header-inner">
-    <div class="logo"><img src="assets/logos/logo.svg" alt="V" width="36"></div>
-    <nav class="main-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="experience.html">Experience</a><a href="events.html">Events</a><a href="music.html">Music</a><a href="lifestyle-card.html">Lifestyle Card</a><a href="contact.html">Contact</a></nav>
-    <div class="controls"><button id="themeToggle" aria-label="toggle theme">Light</button></div>
-  </header>
-  <main>
-    <section class="hero container" style="background-image:url('assets/images/hero-1.jpg');background-size:cover;background-position:center">
-      <div class="hero-inner">
-        <h1>Vongrey Experience</h1>
-        <p class="lead">Selected. Connected. Vongrey.</p>
-        <p class="sub muted">An invite-only movement from Accra — crafted moments, curated company, rare experiences.</p>
-        <div style="margin-top:18px;">
-          <a class="btn-ghost" href="lifestyle-card.html">Membership</a>
-          <a class="btn-solid" href="events.html">Events</a>
-        </div>
-        <div class="img-hero" style="max-width:880px;margin:auto"><img src="assets/images/hero-3.jpg" class="img-hero" alt="Vongrey image"></div>
-      </div>
-    </section>
-    <section class="section container reveal" id="about">
-      <div class="grid-2">
-        <div><h2 class="section-title">Our Philosophy</h2><p>We design private moments that feel inevitable — gatherings where music, atmosphere and craft meet cultural pride. Invitations are selective; the energy is authentic.</p></div>
-        <div><h3>Selected</h3><p class="muted">A deliberate community chosen for cultural alignment.</p><h3>Connected</h3><p class="muted">Partnerships that bring world-class hospitality and design to our members.</p></div>
-      </div>
-    </section>
-    <section class="section container reveal" id="featured">
-      <h2 class="section-title">Featured Moments</h2>
-      <div class="card-row"><div class="card"><h4>Sunset Session — Accra</h4><p class="muted">Rooftop set at golden hour. Limited guestlist.</p></div><div class="card"><h4>Rooftop Night</h4><p class="muted">Invitation-only evening with refined playlists.</p></div><div class="card"><h4>Pop-up Collaborations</h4><p class="muted">Short-run shows with partners across fashion and food.</p></div></div>
-    </section>
-    <section class="section container reveal" id="music">
-      <h2 class="section-title">The Sound of Vongrey</h2>
-      <p class="muted">Curated playlists moving from sunset warmth to late-night elevation.</p>
-      <div class="spotify-wrapper"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2CMMcqG5GPU6CVW8Svrp2s" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
-      <div style="text-align:center;margin-top:12px"><a class="btn-solid" href="https://open.spotify.com/playlist/2CMMcqG5GPU6CVW8Svrp2s" target="_blank">Listen on Spotify</a></div>
-    </section>
-    <section class="section container reveal" id="vision"><h2 class="section-title">Vision</h2><p>To translate Ghanaian creativity into a global movement of curated nightlife, travel and cultural exchange — rare experiences that become part of our members' stories.</p></section>
-    <section class="section container reveal" id="cta"><div style="display:flex;justify-content:space-between;align-items:center;gap:20px;"><div><h3>Join the conversation</h3><p class="muted">Nominate a member or propose a collaboration.</p></div><div><a class="btn-solid" href="contact.html">Contact Us</a></div></div></section>
-  </main>
-  <footer class="footer container"><div>© 2025 Vongrey Experience — Selected. Connected. Vongrey.</div></footer>
-<script>
-var btn = document.getElementById('themeToggle');
-btn.addEventListener('click', function(){
-  if(document.body.classList.contains('light')){ document.body.classList.remove('light'); btn.textContent='Light'; }
-  else { document.body.classList.add('light'); btn.textContent='Dark'; }
-});
-var reveals = document.querySelectorAll('.reveal');
-var iobs = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); }); }, {threshold:0.12});
-reveals.forEach(function(r){ iobs.observe(r); });
-</script>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Vongrey Experience</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="header container"><div class="logo"><img src="assets/logos/logo.svg" alt="V"></div><nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="experience.html">Experience</a><a href="events.html">Events</a><a href="music.html">Music</a><a href="invite.html">Invite</a></nav></header>
+<section class="hero" style="background-image:url('assets/images/hero.jpg')"><div class="container hero-inner"><h1 class="h1">Vongrey Experience</h1><p class="lead">Vongrey Experience is an exclusive, invite-only entertainment and cultural movement founded in Ghana. We craft private events, curated nightlife experiences, and cultural showcases designed to promote African — especially Ghanaian — culture to the world.</p><div style="margin-top:18px"><a class="btn" href="invite.html">Request Invite</a><a class="btn" href="music.html">Listen</a></div></div></section>
+<main><section class="section container reveal"><div class="grid-2"><div><h2 class="section-title">Our Philosophy</h2><p>To elevate African creativity into global spaces through invite-only experiences that fuse music, atmosphere and storytelling.</p></div><div><h3>Selected</h3><p class="muted">Invitation-based community chosen for cultural fit and authenticity.</p><h3 style="margin-top:10px">Connected</h3><p class="muted">Partnered with hospitality and creative houses to elevate member experiences.</p></div></div></section>
+<section class="section container reveal"><h2 class="section-title">The Sound of Vongrey</h2><p class="muted">Curated playlist mixing African grooves with global rhythms.</p><div class="spotify-wrapper"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2CMMcqG5GPU6CVW8Svrp2s" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div></section>
+<section class="section container reveal"><h2 class="section-title">Vision</h2><p>To translate Ghanaian creativity into a global movement of curated nightlife, travel and cultural exchange — making our members' moments part of an enduring story.</p></section></main>
+<footer class="footer container">© 2025 Vongrey Experience — Selected. Connected. Vongrey.</footer><script src="script.js"></script></body></html>
